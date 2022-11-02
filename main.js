@@ -1,7 +1,7 @@
 import "./style.scss"
 
-const processo = require("./js/processo")
-const dados_tela = require("./js/dados_tela")
+const processo = require("./processo")
+const dados_tela = require("./dados_tela")
 
 dados_tela.adiciona_add_event_listener("#botao_find","click",busca_resultado_find)
 dados_tela.adiciona_add_event_listener("#botao_filter","click",busca_resultado_filter)
