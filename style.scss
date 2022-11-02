@@ -1,0 +1,103 @@
+// variaveis iniciadas
+$verde : #aae4d8;
+$marron : #463b1d;
+$vermelho : #fa0a0a;
+$cinza-claro : #DFE6ED;
+$cinza-medio : #C3CFD9;
+$cinza-escuro : #788898;
+$pretosombra : black;
+$branco : rgba(255, 255, 255, 0.993);
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+
+body {
+    background-color: $verde;
+    height: 100vh;
+}
+
+
+.card-principal {
+    display: flex;
+    height: 100vh;
+    padding: 20px;
+    align-items: flex-start;
+    justify-content: center;
+
+    @media screen and (max-width: 640px) {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    @media screen and (min-width: 641px) {
+        flex-direction: row;
+        gap: 50px;
+    }
+
+    &__layout {
+        background-color: $cinza-claro;
+        display: flex;
+        height: 48vh;
+        width: 250px;
+        padding: 20px;
+        align-items: center;
+        justify-content: space-around;
+        flex-direction: column;
+
+        &__dados {
+            height: 50px;
+            width: 200px;
+            border: solid 2px $cinza-medio;
+            text-align: center;
+            border-radius: 4px;
+        }
+
+        > button:hover {
+            background-color: $cinza-escuro;
+        }
+
+        > button:active {
+            background-color: $cinza-escuro;
+            box-shadow: 0 2px $cinza-escuro ;
+            transform: translateY(2px);
+        }
+
+        &__botao {
+            height: 50px;
+            width: 200px;
+            border-radius: 4px;
+            font-size: 15px;
+            border: none;
+            background-color: $cinza-escuro;
+            color: $branco;
+            text-align: center;
+
+        }
+
+        >span {
+            display: flex;
+            padding: 20px;
+            align-items: center;
+            justify-content: center;
+            height: 50px;
+            width: 200px;
+            border-radius: 4px;
+            font-size: 15px;
+            border: none;
+            background-color: $marron;
+            color: $branco;
+        }
+
+        >P {
+            font-size: 35px;
+        }
+
+
+    }
+
+
+}
