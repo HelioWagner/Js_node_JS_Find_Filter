@@ -25,9 +25,8 @@ body {
     display: flex;
     height: 100vh;
     padding: 20px;
-    align-items: flex-start;
     justify-content: center;
-
+    align-items: center;
     @media screen and (max-width: 640px) {
         flex-direction: column;
         gap: 20px;
@@ -42,15 +41,16 @@ body {
         background-color: $cinza-claro;
         display: flex;
         height: 48vh;
-        width: 300px;
+        width: 315px;
         padding: 20px;
         align-items: center;
         justify-content: space-around;
         flex-direction: column;
+        gap: 20px;
 
         &__dados {
             height: 50px;
-            width: 250px;
+            width: 265px;
             border: solid 2px $cinza-medio;
             text-align: center;
             border-radius: 4px;
@@ -68,7 +68,7 @@ body {
 
         &__botao {
             height: 50px;
-            width: 250px;
+            width: 265px;
             border-radius: 4px;
             font-size: 15px;
             border: none;
@@ -84,7 +84,7 @@ body {
             align-items: center;
             justify-content: center;
             height: 50px;
-            width: 250px;
+            width: 265px;
             border-radius: 4px;
             font-size: 15px;
             border: none;
